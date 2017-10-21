@@ -81,7 +81,7 @@ Navbar and Navigation Styles / Overrides
 }
 
 .dropdown.open .dropdown-menu li a:hover {
-	color: #fde5b9;
+	color: #fde5b9 !important;
 }
 
 .navbar-nav > li:first-child {

@@ -20,16 +20,20 @@
       for(let i = 0; i < moviesLength; i++) {
       %>
       <div class="poster">
-        <img src="images/<%= movies[i].poster %>" class="img-fluid">
-        <div class="poster-info-overlay">
-          <h3><%= movies[i].title %></h3>
-          <h4 class="view-more">View More <i class="fa fa-arrow-right" aria-hidden="true"></i></h4>
-        </div>
+        <a href="/star_wars_episode/<%= movies[i].episode_number %>">
+          <img src="/images/<%= movies[i].poster %>" class="img-fluid">
+          <div class="poster-info-overlay">
+            <h3><%= movies[i].title %></h3>
+            <h4 class="view-more">View More <i class="fa fa-arrow-right" aria-hidden="true"></i></h4>
+          </div>
+        </a>
       </div>
       <% } %>
 
     </div>
 
+    <% include footer.ejs %>
+    
     <% include partials/scripts.ejs %>
 
   </body>

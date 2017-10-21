@@ -9,7 +9,7 @@
                     let moviesLength = movies.length;
                     for(let i = 0; i < moviesLength; i++) {
                     %>
-                    <a href="#" class="episode_link dropdown-item"><%= movies[i].title %></a>
+                    <a href="/star_wars_episode/<%= movies[i].episode_number %>" class="episode_link dropdown-item"><%= movies[i].title %></a>
                     <% } %>
                 </div>
             </li>
