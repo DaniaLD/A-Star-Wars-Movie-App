@@ -1,0 +1,18 @@
+<nav class="navbar fixed-top navbar-fixed-top">
+    <div class="content-padding">
+        <ul class="nav">
+            <li class="nav-item"><a style="color:white;" href="/" class="nav-link">Home</a></li>
+            <li class="nav-item dropdown">
+                <a style="color:white;" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Movies</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <% 
+                    let moviesLength = movies.length;
+                    for(let i = 0; i < moviesLength; i++) {
+                    %>
+                    <a href="#" class="episode_link dropdown-item"><%= movies[i].title %></a>
+                    <% } %>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
