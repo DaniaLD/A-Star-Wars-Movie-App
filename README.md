@@ -4,6 +4,7 @@ A simple Express app.
 It's my first application with express.
 
 ## Step by step installation
+* download node.js from https://nodejs.org/en/ and install it
 * clone or download project and extract it
 * go to the directory of the project and run cmd there
 * type npm install
